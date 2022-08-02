@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PIAC.com.pk Assignment</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+.ListLinks{
+    text-decoration: none;
+    color: #707070;
+}
+.ListLinks:hover{
+	text-decoration: none;
+    color: #707070;
+    margin-left: 6px;
+    transition: all 0.4s linear;
+}
+.button{
+	border: none;
+	color: white;
+	background: #69b342;
+	width: 120px;
+	height: 34px;
+	margin-left: 24px;
+}
+.button:hover{
+	border-color: #204d74;
+	color: white;
+	background:#286090;
+	width: 120px;
+	height: 34px;
+	margin-left: 24px;
+}
+.Button1{
+	height: 37px;
+	width: 140px;
+	font-size: 13px;
+	background: #23527c;
+	color: white;
+	border-color: #2e6da4;
+}
+.Button1:hover{
+    height: 37px;
+	width: 140px;
+	font-size: 13px;
+	background: #2e6da4;
+	color: white;
+	border-color: #2e6da4;
+}
+.Button2{
+    height: 37px;
+    width: 140px;
+    font-size: 13px;
+    background: #69b342;
+    color: white;
+    border: none;
+}
+.Button2:hover{
+	height: 37px;
+	width: 140px;
+	font-size: 13px;
+	background: #23527c;
+	color: white;
+	border: none;
+}
+.button5{
+	border: none;
+	color: white;
+	background: #69b342;
+	width: 195px;
+	height: 33px;
+	margin-left: 24px;
+	font-weight: 400;
+	font-size: 13px;
+}
+.button5:hover{
+	border-color: #204d74;
+	color: white;
+	background:#286090;
+	width: 195px;
+	height: 33px;
+	margin-left: 24px;
+	font-weight: 400;
+	font-size: 13px
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropbtn{
+	background-color: white;
+	color:#707070;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	font-size: 14px;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 280px;
+	z-index: 1;
+}
+.dropdown-content a {
+	font-size: 14px;
+	color: #707070;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover{
+	background-color:#69b342;
+	color: white;
+	font-size: 14px;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	font-size: 14px;
+}
+.dropdown:hover .dropbtn {
+	background-color:white;
+	color:#69b342;
+	font-size: 19px;
+}
+.button3{height: 45px;
+	width: 230px;
+	background: #00567a;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	position: absolute;
+	top: 550px;
+	left: 224px;
+	padding-right: 90px;
+}
+.button4{color: #707070;
+	background: white;
+	height: 45px;
+	width: 230px;
+	padding-right: 90px;
+	font-size: 14px;
+	font-weight: 400;
+	border: none;
+}
+.button4:hover{
+	color: white;
+	background: #00567a;
+	height: 45px;
+	width: 230px;
+	padding-right: 90px;
+	font-size: 14px;
+	font-weight: 400;
+	border: none;
+}
+.full_width{
+	width:100vw;
+}
+.third{
+	min-width:100%;
+	float: left;
+}
+.LondonAndBirminghamImgFigure{
+	height: 370px;
+    overflow: hidden;
+    width: 550px;
+    margin-left: 217px;
+    margin-top: 0px;
+}
+.LondonAndBirminghamImg{
+	margin-left: 0px;
+	height: 370px;
+	transition: all 0.3s linear;
+}
+.LondonAndBirminghamImg:hover{
+	transform: scale(1.2);
+}
+.SaudiArabiaAndManchesterImgFigure{
+	height: 370px;
+    overflow: hidden;
+    width: 550px;
+    margin-left: 14px;
+    margin-top: 0px;
+}
+.SaudiArabiaAndManchesterImg{
+	margin-left: 0px;
+	height: 370px;
+	transition: all 0.3s linear;
+}
+.SaudiArabiaAndManchesterImg:hover{
+	transform: scale(1.2);
+}
+.HeaderParagraphLinks{
+	text-decoration: none;
+}
+.DropdownButtons{
+	font-size: 19px
+}
+.FlightInnerDivs{
+	width: 33%;
+	float: left;
+}
+.RadioLabels{
+	font-size: 13px;
+	font-weight: 500;
+	color: white;
+}
+.RadioInputs{
+   background: #69b342;
+   margin-left: 29px;
+}
+.ImagesDiv{
+	width: 50%;
+	float: left;
+}
+.LatestFlightDealsDiv{
+	width: 50%;
+	float: left;
+}
+.LatestFlightDealsImagesHeadings{
+    font-weight: 600;
+    font-size: 64px;
+}
+.LatestFlightDealsImagesParagraphs{
+	font-size: 24px;
+	font-weight: 500;
+	margin-top:-36px;
+}
+.StartingfromGBP340AndMoreDetailsParagraphs{
+	color: white;
+	font-size: 24px;
+	margin-top: 15px;
+	margin-left: 16px;
+}
+.MoreDetailsButtons{
+	position: absolute;
+	top: -25px;
+	left: 390px;
+}
+.BookNowButtons{
+	position: absolute;
+	top: 23px;
+	left: 390px;
+}
+.ExtraBaggageAndSeatUpgradeDiv{
+	width: 33%;
+	float: left;
+	margin-left:-147px
+}
+.ValueAddedServicesImagesHeading{
+	font-weight: 600;
+	font-size: 30px;
+	color:#69b342;
+}
+.ExploreMoreLinks{
+	font-size: 18px;
+	font-weight: 600px;
+	color: #01557a;
+	text-decoration: none;
+}
+.FooterDivs{
+	width: 25%;
+	float: left;
+	margin-top: 45px;
+}
+.ExperienceListSmallWords{
+	font-size: 14px;
+}
+.GoogleplayAndAppGalleryImage{
+	margin-left:-90px;
+}
+#Header a{
+ color: #707070;
+}
+#Header a:hover{
+	color: #69b342;
+	text-decoration: none;
+}
+#Covid-19Div{
+	height: 45px;
+	background: #fef8d5;
+	font-weight: 400;
+	font-size: 14px;
+	color: #707070;
+}	
+#Covid-19Paragraph{
+    margin-left: 217px;
+}
+#ImportantSpan{
+	color: #c60c30;
+	font-weight: 700;
+}
+#ReadHearLink{
+	color: #c60c30;
+	text-decoration: none;
+}
+#PIAImg{
+	margin-left: 220px;
+}
+#HeaderParagraph{
+	position: absolute;
+	top: 45px;
+	left: 800px;
+}
+#MemberLogInSpan{
+   color:#69b342;
+   font-weight: 700;
+}
+#WhereWeFlyDiv{
+	position: absolute
+	;top: 154px;
+	left: 298px;
+}
+#ExperienceDiv{
+	position: absolute;
+	top: 154px;
+	left: 580px;
+}
+#AwardsPlusDiv{
+	position: absolute;
+	top: 154px;
+	left: 860px;
+}
+#DealsDiv{
+	position: absolute;
+	top: 154px;
+	left: 1165px;
+}
+#HeaderImg{
+	height:750px;
+	width: 1575px;
+	position: absolute;
+	top: 215px;
+}
+#MoreInformationButton{
+	position: absolute;
+	top: 505px;
+	left: 200px;
+}
+#SchedulesButton{
+	position: absolute;
+	top: 550px;
+	left: 456px;
+}
+#WebCheck-InButton{
+	position: absolute;
+	top: 550px;
+	left: 687px;
+}
+#FlightStatusButton{
+	position: absolute;
+	top: 550px;
+	left: 918px;
+}
+#MyBookingButton{
+	position: absolute;
+	top: 550px;
+	left: 1149px;
+}
+#FlightOuterDiv{
+	height: 265px;
+	width: 1155px;
+	background-image: linear-gradient(#4ba8de63, #1d3c7563);
+	position: absolute;
+	top: 595px;
+	left: 224px;
+}
+#ReturnInput{
+	background: #69b342;
+	margin-top: 24px;
+	margin-left: 28px;
+}
+#FlightDiv1Select{
+	height: 35px;
+	width: 345px;
+	color: #707070;
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: 17px;
+	margin-left: 28px;
+}
+#FlightArrowsImage{
+    position: absolute;
+    top: 60px;
+    left: 388px;
+}
+#FlightDiv1Date{
+	height: 32px;
+	width: 341px;
+	color: #707070;
+	font-weight: 400;
+	margin-left: 28px;
+	margin-top: 11px;
+}
+#FlightDiv1PassengersHeading{
+    font-weight: 500;
+    color:white;
+    font-size: 16px;
+    margin-left: 28px;
+    margin-top: 25px;
+}
+#FlightDiv1PassengersSelect{
+	height: 35px;
+	width: 345px;
+	color: #707070;
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 28px;
+}
+#FlightDiv2Select{
+	height: 34px;
+	width: 345px;
+	color: #707070;
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: 59px;
+	margin-left: 55px;
+}
+#FlightDiv2Date{
+	height: 32px;
+	width: 341px;
+	color: #707070;
+	font-weight: 400;
+	margin-left: 55px;
+	margin-top: 12px;
+}
+#FlightDiv2CabinHeading{
+	font-weight: 500;
+	color:white;
+	font-size: 16px;
+	margin-left: 55px;
+	margin-top: 25px;
+}
+#FlightDiv2CabinSelect{
+	height: 34px;
+	width: 345px;
+	color: #707070;
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 55px;
+}
+#FlightDiv3CheckboxInput{
+	height:16px;
+	width: 20px;
+	margin-top: 117px;
+	margin-left: 48px;
+}
+#FlightDiv3CheckboxLabel{
+    color: white;
+    font-size: 15px;
+}
+#FlightDiv3FindFlightButton{
+	font-size: 13px;
+	font-weight: 400;
+	border: none;
+	color: white;
+	margin-left: 50px;
+	margin-top: 46px;
+	background: #69b342;
+	width: 195px;
+	height: 33px;
+}
+#ImagesPaddingDiv{
+	padding-top: 860px;
+}
+#HBLBankImage{
+	height: 150px;
+	width: 782px;
+}
+#BookNowImage{
+	height: 150px;
+	width: 782px;
+	margin-top: 35px;
+}
+#AskariBankImage{
+	height: 150px;
+}
+#GolootloImage{
+	height: 150px;
+	margin-top: 35px;
+}
+#LatestFlightDealsHeading{
+	font-size: 58px;
+	font-weight: 600;
+	color: #00557a;
+	margin-left: 218px;
+	padding-top: 373px;
+}
+#LondonDiv{
+	position: absolute;
+	top: 1506px;
+	left: 252px;
+	color: white;
+}
+#LondonStartingfromGBP340Div{
+	background-image:linear-gradient(#12084d,#3567b7,#3a9ecf,#207cca);
+	height: 54px;
+	width: 286px;
+	position: absolute;
+	top: 1811px;
+	left: 226px
+}
+#BirminghamDiv{
+	position: absolute;
+	top: 1895px;
+	left: 251px;
+	color: white;
+}
+#BirminghamStartingfromGBP340Div{
+    background-image:linear-gradient(#12084d,#3567b7,#3a9ecf,#207cca);
+    height: 54px;
+    width: 286px;
+    position: absolute;
+    top: 2201px;
+    left: 226px;
+}
+#SaudiArabiaDiv{
+	position: absolute;
+	top: 1506px;
+	left: 833px;
+	color: white;
+}
+#SaudiArabiaMoreDetailsDiv{
+	background-image:linear-gradient(#12084d,#3567b7,#3a9ecf,#207cca);
+	height: 54px;
+	width: 166px;
+	position: absolute;
+	top: 1811px;
+	left: 806px;
+}
+#ManchesterDiv{
+	position: absolute;
+	top: 1895px;
+	left: 831px;
+	color: white;
+}
+#ManchesterStartingfromGBP340Div{
+    background-image:linear-gradient(#12084d,#3567b7,#3a9ecf,#207cca);
+    height: 54px;
+    width: 286px;
+    position: absolute;
+    top: 2201px;
+    left: 806px;
+}
+#AllDealsHeading{
+	color: #00557a;
+	margin-left: 215px;
+	font-size: 58px;
+	margin-top: 875px;
+}
+#AllDealsDiv{
+	height: 113px;
+	width: 1170px;
+	margin-left: 197px;
+	 background-image: linear-gradient(#4ba8de63,#1d3c7563);
+}
+#AllDealsSelect{
+	height: 34px;
+	width: 340px;
+	margin-top: 39px;
+	margin-left: 140px;
+	font-size: 14px;
+	color:#00557a;
+}
+#AllDealsDate{
+	height: 31px;
+	width: 340px;
+	margin-left: 24px;
+}
+#ValueAddedServicesHeading{
+	font-size: 58px;
+	color:#00557a;
+	margin-left: 200px;
+	margin-top: 65px;
+}
+#MilesAndSmilesDiv{
+	width: 33%;
+	float: left;
+	margin-left: 207px;
+}
+#FacilitiesHeading{
+	color:#69b342;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-left: 210px;
+}
+#FacilitiesList{
+	list-style: none;
+	margin-left: 170px;
+	font-size: 18px;
+}
+#ExperienceHeading{
+	color:#69b342;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-left:105px;
+}
+#ExperienceList{
+	list-style: none;
+	margin-left: 66px;
+	font-size: 18px;
+}
+#QuickLinksHeading{
+	color:#69b342;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+#QuickLinksList{
+	list-style: none;
+	margin-left:-21px;
+	font-size: 18px;
+}
+#ConnectWithUsHeading{
+	color:#69b342;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-left:-95px;
+}
+#FacebookImage{
+	margin-left:-93px;
+}
+#AppstoreImage{
+	margin-top: 15px;
+	margin-left:-90px;
+}
+#FooterPIAImageDiv{
+	width: 75%;
+	float: left;
+}
+#FooterPIAImage{
+	margin-left: 185px;
+}
+#FooterPIAImageParagraph{
+	margin-left: 183px;
+	font-size: 14px;
+}
+#PMDUAndJamaPunjiImageDiv{
+	width: 25%;
+	float: left;
+}
+#JamaPunjiImage{
+	margin-left: 20px;
+}
+
+	</style>
+
+<body style="font-family: sans-serif;">
+	<div class="full_width">
+	<div class="third" id="Covid-19Div">
+		<p id="Covid-19Paragraph"> &#9888; <span id="ImportantSpan">Important:</span> Travel updates due to COVID-19 (Coronavirus) situation <a id="ReadHearLink" href="https://www.piac.com.pk/travel-advisory-updates">Read Hear</a></p>
+		
+	</div>
+
+	</div>
+	<div id="Header">
+		<a href="https://www.piac.com.pk/"><img id="PIAImg" src="https://www.piac.com.pk/templates/pia/images/logo-new.png"></a>
+		<p id="HeaderParagraph"><a class="HeaderParagraphLinks" href="https://www.piac.com.pk/corporate/press-releases"> Press Release</a>&nbsp;&nbsp; |&nbsp;&nbsp; </span><a class="HeaderParagraphLinks" href="https://www.piac.com.pk/contact-us">Contact us</a>&nbsp;&nbsp; | &nbsp;&nbsp;<span id="MemberLogInSpan"> Member Log In </span>&nbsp;&nbsp; | &nbsp;&nbsp;<a class="HeaderParagraphLinks" href="https://www.piac.com.pk/corporate/"> Corporate Website</a></p>
+
+	</div>
+	<div id="WhereWeFlyDiv" class="dropdown">
+  <button class="dropbtn DropdownButtons">Where We Fly</button>
+  <div class="dropdown-content">
+    <a href="https://www.piac.com.pk/where-we-fly/destinations?__cf_chl_tk=DdG_O11oIN.QEPb0vTpCXcip1knUNvYTwlQPo3S1RXM-1658693679-0-gaNycGzNCuU">Destinations</a>
+    <a href="https://www.piac.com.pk/where-we-fly/our-network">Our Network</a>
+    <a href="https://www.piac.com.pk/where-we-fly/map">Map</a>
+  </div>
+</div>
+<div id="ExperienceDiv" class="dropdown">
+  <button class="dropbtn DropdownButtons">Experience</button>
+  <div class="dropdown-content">
+    <a href="https://www.piac.com.pk/experience/special-assistance">Special Assistance</a>
+    <a href="https://www.piac.com.pk/experience/baggage/advance-purchase-excess-baggage">Baggage</a>
+    <a href="https://www.piac.com.pk/experience/cabins/executive-economy">Cabins</a>
+    <a href="https://www.piac.com.pk/experience/seat-select/preferred-seat">Seat</a>
+    <a href="https://www.piac.com.pk/experience/magazines">Magazines - Humsafar / Air Safety</a>
+    <a href="https://www.piac.com.pk/experience/seat-upgrade">In-Flight Seat Upgrade</a>
+  </div>
+</div>
+<div id="AwardsPlusDiv" class="dropdown">
+  <button class="dropbtn DropdownButtons">Awards +Plus</button>
+  <div class="dropdown-content">
+    <a href="https://www.piac.com.pk/awards/awards-plus">Member Login</a>
+    <a href="https://book-pia.crane.aero/web/MemberRegister.xhtml">Become a Member</a>
+    <a href="https://www.piac.com.pk/awards/about-us">About Us</a>
+    <a href="https://www.piac.com.pk/awards/a-benefits">A+ Benefits</a>
+    <a href="https://www.piac.com.pk/awards/a-experince">A+ Experience</a>
+    <a href="https://www.piac.com.pk/awards/awards-rewards">Awards & Rewards</a>
+    <a href="https://www.piac.com.pk/awards/awards-contacts">Contact Award +Plus & FAQs</a>
+    <a href="https://www.piac.com.pk/awards/terms-and-conditions">Terms and Conditions</a>
+  </div>
+</div>
+
+<div id="DealsDiv" class="dropdown">
+  <button class="dropbtn DropdownButtons">Deals</button>
+  <div class="dropdown-content">
+    <a href="https://www.piac.com.pk/deals/online-discounts">Online Discounts</a>
+    <a href="https://www.piac.com.pk/deals/global-deals">Global Deals</a>
+  </div>
+</div>
+<img id="HeaderImg" src="https://www.piac.com.pk/images/banners/signature-web-banner.jpg">
+<a href="https://www.piac.com.pk/about-us"><button id="MoreInformationButton" class="button5">More Information</button></a>
+<button type="submit" class="button3">Flight</button>
+<button id="SchedulesButton" type="submit" class="button4">Schedules</button>
+<button id="WebCheck-InButton" type="submit" class="button4">Web Check-In</button>
+<button id="FlightStatusButton" type="submit" class="button4">Flight Status</button>
+<button id="MyBookingButton" type="submit" class="button4">My Booking</button>
+<div id="FlightOuterDiv">
+	<div class="FlightInnerDivs">
+	<form>
+		<input type="radio" id="ReturnInput">
+		<label class="RadioLabels">Return</label>
+		<input class="RadioInputs" type="radio">
+		<label class="RadioLabels">Oneway</label>
+		<input class="RadioInputs" type="radio">
+		<label class="RadioLabels">Multicity</label>
+		<select id="FlightDiv1Select">
+			<option>From:Airpot & City</option>
+			<option>Karachi - Jinnah Intl. (KHI)</option>
+			<option>Bahawalpur (BHV)</option>
+			<option>Chitral (CJL)</option>
+			<option>Dalbandin (DBA)</option>
+		
+		</select>
+		<img id="FlightArrowsImage" src="https://www.piac.com.pk/templates/pia/images/swap.svg">
+		<input id="FlightDiv1Date" type="Date">
+		<h1 id="FlightDiv1PassengersHeading">Passenger(s)</h1>
+		<select id="FlightDiv1PassengersSelect">
+			<option>1 Adult, 0 Child, 0 Infant</option>
+	    </select>
+
+	</form>
+
+	</div>
+	<div class="FlightInnerDivs">
+		<form>
+		
+		<select id="FlightDiv2Select">
+			<option>To:Airpot & City</option>
+			<option>Beijing Capital (PEK)</option>
+			<option>Paris - Charles de Gaulle (CDG)</option>
+			<option>Tokyo - Narita (NRT)</option>
+			<option>Kuala Lumpur (KUL)</option>
+		
+		</select>
+		<input id="FlightDiv2Date" type="Date">
+		<h1 id="FlightDiv2CabinHeading">Cabin:</h1>
+		<select id="FlightDiv2CabinSelect">
+			<option>Economy</option>
+			<option>Executive Economy</option>
+			<option>Business</option>
+	    </select>
+
+	</form>
+
+	</div>
+	<div class="FlightInnerDivs">
+		<input id="FlightDiv3CheckboxInput" type="checkbox">
+		<label id="FlightDiv3CheckboxLabel"> MY DATES ARE FLEXIBLE </label>
+		<pre><button id="FlightDiv3FindFlightButton" type="submit">Find Flight</button></pre>
+		
+	</div>
+	
+
+</div>
+
+<div id="ImagesPaddingDiv">
+<div class="ImagesDiv">
+		<a href="https://www.piac.com.pk/#"><img id="HBLBankImage" src="https://www.piac.com.pk/images/PIA-banner-3.jpg"></a>
+		<a href="https://pia.ascendant.travel/"><img id="BookNowImage" src="https://www.piac.com.pk/images/PIA_BOOK_HOTEL.gif"></a>
+		
+	</div>
+
+	<div class="ImagesDiv">
+		<a href="https://askaribank.com/personal/consumer-products/askari-pia-co-brand-credit-card/"><img id="AskariBankImage" src="https://www.piac.com.pk/images/Askari_cobrand1.jpg"></a>
+		<a href="https://www.piac.com.pk/#"><img id="GolootloImage" src="https://www.piac.com.pk/images/offers/PIA_Golootlo_Banner.gif"></a>
+
+	</div>
+    </div>
+
+	<h1 id="LatestFlightDealsHeading">Latest Flight Deals</h1>
+
+	<div class="LatestFlightDealsDiv">
+		<figure class="LondonAndBirminghamImgFigure">
+		<img class="LondonAndBirminghamImg" src="https://www.piac.com.pk/images/deals/London1.jpg">
+		</figure>
+		<div id="LondonDiv">
+		    <h1 class="LatestFlightDealsImagesHeadings">London</h1>
+		    <p class="LatestFlightDealsImagesParagraphs">Round Trip To Islamabad</p>
+
+		</div>
+		<div id="LondonStartingfromGBP340Div">
+			<p class="StartingfromGBP340AndMoreDetailsParagraphs">Starting from GBP 340*</p>
+			<a href="https://www.piac.com.pk/destinations/manchester">
+				<button class="Button1 MoreDetailsButtons">More Details</button>
+			</a>
+			<a href="https://book-pia.crane.aero/web/FlexibleSearch.xhtml?faces-redirect=true">
+				<button class="Button2 BookNowButtons">Book Now</button>
+			</a>
+			
+
+		</div>
+        <figure class="LondonAndBirminghamImgFigure">
+		<img class="LondonAndBirminghamImg" src="https://www.piac.com.pk/images/deals/Birmingham1.jpg">
+		</figure>
+		<div id="BirminghamDiv">
+		    <h1 class="LatestFlightDealsImagesHeadings">Birmingham</h1>
+		    <p class="LatestFlightDealsImagesParagraphs">Round Trip To Islamabad</p>
+
+		</div>
+
+		<div id="BirminghamStartingfromGBP340Div">
+			<p class="StartingfromGBP340AndMoreDetailsParagraphs">Starting from GBP 340*</p>
+			<a href="https://www.piac.com.pk/"><button class="Button1 MoreDetailsButtons">More Details</button></a>
+			<a href="https://book-pia.crane.aero/web/FlexibleSearch.xhtml?faces-redirect=true"><button class="Button2 BookNowButtons">Book Now</button></a>
+			
+
+		</div>
+
+		
+	</div>
+
+	<div class="LatestFlightDealsDiv">
+		<figure class="SaudiArabiaAndManchesterImgFigure" >
+		<img class="SaudiArabiaAndManchesterImg" src="https://www.piac.com.pk/images/deals/KSA1.jpg">
+		</figure>
+		<div id="SaudiArabiaDiv">
+		    <h1 class="LatestFlightDealsImagesHeadings">Saudi Arabia</h1>
+		    <p class="LatestFlightDealsImagesParagraphs">From Pakistan</p>
+
+		</div>
+		<div id="SaudiArabiaMoreDetailsDiv">
+			<p class="StartingfromGBP340AndMoreDetailsParagraphs">More Details</p>
+			<a href="https://www.piac.com.pk/travel-advisory-updates"><button class="Button1 MoreDetailsButtons">More Details</button></a>
+			<a href="https://book-pia.crane.aero/web/FlexibleSearch.xhtml?faces-redirect=true"><button  class="Button2 BookNowButtons">Book Now</button></a>
+			
+
+		</div>
+		<figure class="SaudiArabiaAndManchesterImgFigure">
+		<img class="SaudiArabiaAndManchesterImg" src="https://www.piac.com.pk/images/deals/Manchester1.jpg">
+		</figure>
+		<div id="ManchesterDiv">
+		    <h1 class="LatestFlightDealsImagesHeadings">Manchester</h1>
+		    <p class="LatestFlightDealsImagesParagraphs">Roud trip from Islamabad</p>
+
+		</div>
+
+		<div id="ManchesterStartingfromGBP340Div">
+			<p class="StartingfromGBP340AndMoreDetailsParagraphs">Starting from GBP 340*</p>
+			<a href="https://www.piac.com.pk/"><button class="Button1 MoreDetailsButtons">More Details</button></a>
+			<a href="https://book-pia.crane.aero/web/FlexibleSearch.xhtml?faces-redirect=true"><button class="Button2 BookNowButtons">Book Now</button></a>
+			
+
+		</div>
+        </div>
+
+	</div>
+	
+		<h1 id="AllDealsHeading">All Deals</h1>
+	<div id="AllDealsDiv">
+		<form>
+			<select id="AllDealsSelect">
+				<option>From - To...</option>
+				<option>Quetta - Turbat</option>
+				<option>Karachi - Sukkur - Karachi</option>
+				<option>Karachi - Quetta</option>
+				<option>Karachi - Medina</option>
+				<option>Multan - Sharjah</option>
+				<option>Lahore - Dubai</option>
+				<option>Manchester - Islamabad - Manchester</option>
+				<option>Islamabad - Al Qaassim - Islamabad</option>
+				
+			</select>
+
+			<input type="Date" id="AllDealsDate">
+			<button type="submit" class="button">Search Deals</button>
+
+		</form>
+
+	</div>
+
+<h1 id="ValueAddedServicesHeading">Value Added Services</h1>
+<div id="MilesAndSmilesDiv">
+	<img src="https://www.piac.com.pk/images/offers/crew3.png">
+	<h1 class="ValueAddedServicesImagesHeading">Miles & Smiles</h1>
+	<a href="https://www.piac.com.pk/awards/about-us" class="ExploreMoreLinks">Explore More</a>
+</div>
+
+<div class="ExtraBaggageAndSeatUpgradeDiv">
+	<img src="https://www.piac.com.pk/images/offers/baggage.png">
+	<h1 class="ValueAddedServicesImagesHeading">Extra Baggage</h1>
+	<a href="https://www.piac.com.pk/experience/baggage/advance-purchase-excess-baggage" class="ExploreMoreLinks">Explore More</a>
+</div>
+
+<div class="ExtraBaggageAndSeatUpgradeDiv">
+	<img src="https://www.piac.com.pk/images/offers/upgrade.png">
+	<h1 class="ValueAddedServicesImagesHeading">Seat Upgrade</h1>
+	<a href="https://www.piac.com.pk/experience/seat-upgrade" class="ExploreMoreLinks">Explore More</a>
+</div>
+
+	<div class="FooterDivs">
+		<h1 id="FacilitiesHeading">Facilities</h1>
+		<ol id="FacilitiesList">
+			<a class="ListLinks" href="https://www.piac.com.pk/air-passenger-rights"><li class="ListLinks">Air Passenger Rights</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/conditions-of-carriage"><li class="ListLinks">Condition of Carriage</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/booking-conditions"><li class="ListLinks">Booking Conditions</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/traveler-s-information"><li class="ListLinks">Traveler's Information</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/overseas-pakistanis"><li class="ListLinks">Overseas Pakistanis</li></a>
+			<a class="ListLinks" href="https://www.freight.aero/#tracking"><li class="ListLinks">Track Your Cargo (Intl.)</li></a>
+		</ol>
+
+	</div>
+
+	<div class="FooterDivs">
+		<h1 id="ExperienceHeading">Experience</h1>
+		<ol id="ExperienceList">
+			<li class="ListLinks ExperienceListSmallWords">Cabins</li>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/cabins/executive-economy"><li class="ListLinks">Êxecutive Economy</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/"><li class="ListLinks">Economy</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/special-assistance"><li class="ListLinks">Special Assistance</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/special-assistance-form"><li class="ListLinks">Special Assistance Form</li></a>
+			<li class="ListLinks ExperienceListSmallWords">Baggage</li>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/baggage/baggage-guide"><li class="ListLinks">Baggage Guide</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/baggage/advance-purchase-excess-baggage"><li class="ListLinks">Advance Purchase Excess</li></a>
+			<li class="ListLinks">Baggage</li>
+			<li class="ListLinks ExperienceListSmallWords">Seat</li>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/seat-select/extra-legroom"><li class="ListLinks">Extra Legroom</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/seat-select/preferred-seat"><li class="ListLinks">Preferred Seat</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/magazines"><li class="ListLinks">Magazines - Humsafar / Air</li></a>
+			<li class="ListLinks">Safety</li>
+			<a class="ListLinks" href="https://www.piac.com.pk/experience/seat-upgrade"><li class="ListLinks">In-Flight Seat Upgrade</li></a>
+		</ol>
+	</div>
+
+	<div class="FooterDivs">
+		<h1 id="QuickLinksHeading">Quick Links</h1>
+		<ol id="QuickLinksList">
+			<a class="ListLinks" href="https://www.piac.com.pk/customer-care"><li class="ListLinks">Customer Care</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/contact-us"><li class="ListLinks">Contact Us</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/faqs"><li class="ListLinks">FAQs</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/site-map"><li class="ListLinks">Site Map</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/privacy-policy"><li class="ListLinks">Privacy Policy</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/corporate/"><li class="ListLinks">Business with PIA</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/travel-advisory-updates"><li class="ListLinks">Travel Advisory Updates</li></a>
+			<a class="ListLinks" href="https://www.piac.com.pk/travel-update-and-information"><li class="ListLinks">Travel Update and Information</li></a>
+	</div>
+
+	<div class="FooterDivs">
+		<h1 id="ConnectWithUsHeading">Connect with us</h1>
+		<a href="https://www.facebook.com/PakistanIntAirlines/"><img id="FacebookImage" src="https://www.piac.com.pk/images/content/facebook.svg"height="34px"width="34px"></a>
+		<a href="https://twitter.com/Official_PIA"><img src="https://www.piac.com.pk/images/content/twitter%20(1).svg"height="34px"width="34px"></a>
+		<a href="https://www.instagram.com/pakistanintairlines/"><img src="https://www.piac.com.pk/images/content/instagram.svg"height="34px"width="34px"></a>
+		<a href="https://www.youtube.com/channel/UC05zuiwmwb0Eu2Q21iweb7Q"><img src="https://www.piac.com.pk/images/content/youtube.svg"height="34px"width="34px"></a>
+		<pre><a href="https://apps.apple.com/pk/app/pia-app/id1143220222"><img id="AppstoreImage" src="https://www.piac.com.pk/images/content/appstore.png"width="105px"></a></pre>
+		<a href="https://play.google.com/store/apps/details?id=com.piac.thepiaapp.android"><img class="GoogleplayAndAppGalleryImage" src="https://www.piac.com.pk/images/content/googleplay.png"width="105px"></a>
+		<pre><a href="https://appgallery.huawei.com/#/app/C103253263"><img class="GoogleplayAndAppGalleryImage" src="https://www.piac.com.pk/images/content/huawai.png"width="105px"></a></pre>
+
+	</div>
+
+
+	<div id="FooterPIAImageDiv">
+		<hr><img id="FooterPIAImage" src="https://www.piac.com.pk/templates/pia/images/logo-footer.png">
+		<p id="FooterPIAImageParagraph">© Copyright 2022, Pakistan International Airlines, All Right Reserved</p>
+
+	</div>
+
+	<div id="PMDUAndJamaPunjiImageDiv">
+		<hr><a href="https://www.piac.com.pk/prime-minister"><img src="https://www.piac.com.pk/templates/pia/images/prime-minster-logo.jpg"height="60px"></a>
+		<a href="https://jamapunji.pk/"><img id="JamaPunjiImage" src="https://www.piac.com.pk/templates/pia/images/news_big_1.jpg"></a>
+
+	</div>
+
+</body>
+</html>
